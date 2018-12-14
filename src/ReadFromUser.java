@@ -21,7 +21,7 @@ public class ReadFromUser {
             BufferedWriter bufferedWriter=new BufferedWriter(fileWriter);
             while(count!=9) {//checks the number of user input not to be below nine and more than nine
                 String inputting=input.next();//inputting take the input.next which is the scanner object user inputs to
-                if(Integer.parseInt(inputting)%2!=1){//checks if the inputted is and odd number
+                while(Integer.parseInt(inputting)%2!=1){//checks if the inputted is and odd number
                     System.out.println("please the input must be an odd number");
                      inputting=input.next();
                 }
